@@ -3509,7 +3509,7 @@ type GetSmsTemplateResponseBody struct {
 	// example:
 	//
 	// 1
-	TemplateStatus *string `json:"TemplateStatus,omitempty" xml:"TemplateStatus,omitempty"`
+	TemplateStatus *int32 `json:"TemplateStatus,omitempty" xml:"TemplateStatus,omitempty"`
 	// example:
 	//
 	// 2
@@ -3607,7 +3607,7 @@ func (s *GetSmsTemplateResponseBody) SetTemplateName(v string) *GetSmsTemplateRe
 	return s
 }
 
-func (s *GetSmsTemplateResponseBody) SetTemplateStatus(v string) *GetSmsTemplateResponseBody {
+func (s *GetSmsTemplateResponseBody) SetTemplateStatus(v int32) *GetSmsTemplateResponseBody {
 	s.TemplateStatus = &v
 	return s
 }
